@@ -1,0 +1,1 @@
+﻿Une barre d'outils permet à l'utilisateur d'avancer ou de reculer manuellement dans le diaporama, de démarrer ou arrêter le carrousel, etc. Le diaporama réagit également au clavier.

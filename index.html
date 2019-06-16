@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+</head>
+<body>
+  <div class="row">
+<h1 class="col-md-8">Sliders, les mondes parallèles ;-)</h1>
+</div>
+<hr>
+<div class="row container">
+
+<a id="right"  onclick="showit(this)" class="col-md-6" href="#"><i class="fas fa-arrow-circle-right"></i> Barre d'outils</a>
+<a id="down" class="hidden" onclick="hideit(this)"  href="#"><i class="fas fa-arrow-circle-down"></i> Barre d'outils</a>
+
+</div>
+<hr>
+<br><br>
+<div id="btt" class="row hidden">
+	<div class="col-md-7"></div>
+		<button onclick="prev()" type="button" class=" btn btn-default btn-sm">
+        <span> <i class="fas fa-step-backward"></i></span>
+    </button>
+        <button id="recule" onclick="recule(this)" type="button" class=" btn btn-default btn-sm">
+        <span> <i class="fas fa-fast-backward"></i></span>
+    </button>
+    <button id="reculearr" class="hidden" onclick="reculearr(this)" type="button" class=" btn btn-default btn-sm">
+        <span> <i class="fas fa-pause"></i></span>
+    </button>
+
+		<button id="player" onclick="commencer(this)" type="button" class=" btn btn-default btn-sm">
+        <span> <i class="fas fa-play"></i></span>
+    </button>
+
+    <button id="stopen" class="hidden" onclick="arreter(this)" type="button" class=" btn btn-default btn-sm">
+        <span> <i class="fas fa-pause"></i></span>
+    </button>
+
+    <button onclick="suivant()" type="button" class=" btn btn-default btn-sm">
+        <span> <i class="fas fa-step-forward"></i></span>
+    </button>
+    <button id="ran" onclick="rand (this)" type=" button" class="btn btn-default btn-sm">
+        <span> <i class="fas fa-random"></i></span>
+    </button>
+    <button id="rans" class="hidden" onclick="rands (this)" type=" button" class="btn btn-default btn-sm">
+        <span> <i class="fas fa-pause"></i></span>
+    </button>
+</div>
+<br><br><br>
+<div class="row">
+	<div class="col-md-5"></div>
+	<img class="col-md-6 "  src="images/1.jpg">
+</div>
+<div class="row ">
+	<div class="col-md-8"></div>
+	<h4 class="col-md-4" id="texte">Image1</h4>
+</div>
+
+</body>
+<script src="carrousel.js"></script>
+</html>
